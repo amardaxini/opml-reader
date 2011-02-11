@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email       = ["amardaxini@gmail.com"]
   s.homepage    = "http://rubygems.org/gems/opml-reader"
   s.summary     = %q{parse opml file using nokogiri}
-  s.description = %q{parse opml file using nokogiri,it generates head nad body of opml}
+  s.description = %q{parse opml file using nokogiri,it generates head and body of opml}
 
   s.rubyforge_project = "opml-reader"
 
