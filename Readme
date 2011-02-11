@@ -1,0 +1,23 @@
+reads Opml file format using nokogiri
+
+class OpmlFeed
+  include OpmlReader
+end
+
+opml_feed = OpmlFeed.new()
+opml_feed.parse(file_name or xml_content)
+
+Display header of opml
+opml_feed.head["title"]
+opml_feed.head["created_date"]
+opml_feed.head["modified_date"]
+opml_feed.head["owner_name"]
+opml_feed.head["owner_email"]
+
+Display body of opml
+It return collection of outlines
+opml_feed.outlines
+Each outline has following field
+
+opml_feed.outlines.first.outline
+ It contains hash key contains attributes and value contains attribute values
